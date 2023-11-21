@@ -84,7 +84,8 @@ body {
     }
 
     #menu ul {
-        background: #111;
+        background: rgb(43, 43, 43);
+        opacity:95%;
         position: absolute;
         top: 100%;
         right: 0;
