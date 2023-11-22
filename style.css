@@ -1,5 +1,6 @@
 body {
-    background-color: #303030;
+    background-image: url(media/bg.gif);
+    background-size: cover;
     color: white;
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -46,6 +47,9 @@ body {
     font-size: 16px;
 }
 
+#menu li a{
+    transition: all 300ms;
+}
 
 
 #menu li a:hover {
@@ -141,6 +145,25 @@ a{
 }
 
 .container{
-    margin:5px auto;
+    margin:15px auto;
     text-align: center;
+    background-color: #303030;
+    width: 70%;
+}
+
+main li{
+    padding: 10px;;
+}
+
+.container p{
+    padding:10px;
+}
+
+.mail{
+    color:snow;
+    transition: all 500ms;
+}
+
+.mail:hover{
+    transform: scale(1.2);
 }
