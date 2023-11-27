@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-
+    
     <meta charset="UTF-8">
+    <meta name="description" content="maybezzz webpage">
+    <meta name="keywords" content="HTML, CSS, JavaScript, maybezzz, webpage, home">
+    <meta name="author" content="maybezzz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>CONTACT</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="icon" href="media/logo.png">
 
 </head>
 
-<body>
+<body> 	
 
-    <header>
-        <nav id='menu'>
-            <input type='checkbox'><label></label>
-            <ul>
-                <li><a href='index.html'>Home</a></li>
-                <li><a href='website.html'>Other Websites</a></li>
-                <li><a href='me.html'>About</a></li>
-                <li><a href='contact.html' class="use">Contact</a></li>
-            </ul>
+  	<div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="navigation__button">
+        <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+      </label>
+      <div class="navigation__background"></div>
+
+        <nav class="navigation__nav" role="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link">HOME</a>
+          </li>
+          <li class="navigation__item">
+            <a href="about.html" class="navigation__link">ABOUT</a>
+          </li>
+          <li class="navigation__item">
+            <a href="contact.html" class="navigation__link">CONTACT</a>
+          </li>
+          <li class="navigation__item">
+            <a href="sites.html" class="navigation__link">OTHER WEBSITES</a>
+          </li>
+        </ul>
         </nav>
-        
-        
-    </header>
+    </div>
 
     <main>
-        <div class="container">
-            <h1>Contact</h1>
-            <p>don't contact me(get robac)</p>
-            <p>If u really want to, here it is: <br/> <div class="mail">linuxfan999@gmail.com</div></p>
-        </div>
-        
+      <h1>CONTACT</h1>
+      <p>linuxfan999@gmail.com</p>
+
     </main>
 
+    <script src="text.js"></script>
+    
 </body>
 
 </html>
