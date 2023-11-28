@@ -43,7 +43,9 @@ body.hide-content main {
 }
 
 .container {
-  width: 50%;
+  width: 80%; /* Adjust the width as needed for smaller screens */
+  max-width: 600px; /* Set a maximum width to prevent overflow */
+  margin: auto; /* Center the container */
   text-align: center;
 }
 
