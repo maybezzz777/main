@@ -4,14 +4,10 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100vh;
-}
-
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   background-color: #000;
   background-image: radial-gradient(
       circle at top right,
@@ -33,6 +29,46 @@ body {
   display: none;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+.change {
+  color: yellow;
+}
+
+body.hide-content main {
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.container {
+  width: 50%;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1200ms ease-in-out;
+  flex-direction: column;
+  position: relative;
+}
+
+main p {
+  padding: 10px;
+}
+
+main a {
+  color: white;
+  text-decoration: none;
+}
+
+main li {
+  padding: 10px;
+}
+
 .navigation__button {
   position: fixed;
   top: 1.5rem;
@@ -45,6 +81,12 @@ body {
   z-index: 300;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -99,9 +141,11 @@ body {
 
 .navigation__list {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10% auto;
   text-align: center;
   width: 100%;
   list-style: none;
@@ -111,8 +155,7 @@ body {
   margin: 1rem;
 }
 
-.navigation__link:link,
-.navigation__link:visited {
+.navigation a {
   display: inline-block;
   padding: 1rem 2rem;
   text-transform: uppercase;
@@ -122,19 +165,7 @@ body {
   transition: all 0.2s;
 }
 
-@media (min-width: 768px) {
-  .navigation__link:link,
-  .navigation__link:visited {
-    font-size: 3.8rem;
-  }
-}
-
-.navigation__link span {
-  margin-right: 1.5rem;
-  display: inline-block;
-}
-
-.navigation__link:hover {
+.navigation a:hover {
   color: #c1d0d0;
   transform: scale(1.1);
 }
@@ -164,16 +195,8 @@ body {
 }
 
 @media (min-width: 768px) {
-  .navigation__icon,
-  .navigation__icon::before,
-  .navigation__icon::after {
-    width: 3rem;
-  }
   .navigation__icon {
     margin-top: 3.5rem;
-  }
-  h1 {
-    font-size: 25px;
   }
 }
 
@@ -213,53 +236,4 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg);
-}
-
-#by {
-  font-family: "Arima Madurai", cursive;
-  color: #4a676a;
-  font-size: 10px;
-  position: absolute;
-  top: 22%;
-  right: 2.5%;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-.change {
-  color: yellow;
-}
-
-body.hide-content main {
-  opacity: 0;
-  transition: all 300ms;
-}
-
-.container {
-  width: 50%;
-  text-align: center;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 1000ms ease-in-out;
-  flex-direction: column;
-  position: relative;
-}
-
-main p {
-  padding: 10px;
-}
-
-main a {
-  color: white;
-  text-decoration: none;
-}
-
-main li {
-  padding: 10px;
 }
