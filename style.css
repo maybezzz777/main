@@ -43,9 +43,9 @@ body.hide-content main {
 }
 
 .container {
-  width: 80%; /* Adjust the width as needed for smaller screens */
-  max-width: 600px; /* Set a maximum width to prevent overflow */
-  margin: auto; /* Center the container */
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
   text-align: center;
 }
 
@@ -56,6 +56,22 @@ main {
   transition: opacity 1200ms ease-in-out;
   flex-direction: column;
   position: relative;
+}
+
+#absolute {
+  position: absolute;
+}
+
+#particles-js {
+  width: 80%;
+  height: 80vh;
+}
+
+#time {
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  font-size: 25px;
 }
 
 main p {
@@ -88,6 +104,11 @@ main li {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 30px;
+  }
+  #time {
+    font-size: 20px;
+    left: 75%;
+    top: -3%;
   }
 }
 

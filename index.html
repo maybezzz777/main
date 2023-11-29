@@ -16,9 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="icon" href="media/logo.png">
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="text.js"></script>
-
 </head>
 
 <body> 	
@@ -48,10 +45,22 @@
         </nav>
     </div>
 
-    <main>
-      <h1>I'm <span class="change"></span></h1>
-    </main>
     
+
+    
+    <main id="particles-js">
+      <div id="time">21:37</div>
+      <h1 id="absolute">I'm <span class="change"></span></h1>
+    </main>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="text.js"></script>
+    <script src="timer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', timer);
+    </script>
 
 </body>
 
