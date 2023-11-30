@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var typed = new Typed(".change", {
-        strings: ["Web Developer", "Idiot", "IT Specialist", "Autist"],
+        strings: ["Racist", "Horny", "Homophobic", "Acoustic", "Sexist"],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true
