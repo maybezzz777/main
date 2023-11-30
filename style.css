@@ -127,6 +127,24 @@ textarea {
   width: 80%;
 }
 
+#sites {
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#sites li {
+  transition: all 500ms;
+}
+
+#sites a:hover {
+  color: yellow;
+}
+
+#sites li:hover {
+  transform: scale(1.2);
+}
+
 .navigation__button {
   position: fixed;
   top: 1.5rem;

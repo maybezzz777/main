@@ -46,13 +46,13 @@
 
     <main class="main">
       <div class="container">
-      <form action="POST">
+      <form>
         <fieldset>
           <legend>CONTACT</legend>
-          <label for="name"><span id="margin">Name:</span><input type="text" id="name" name="name"></label>
-          <label for="lname"><span id="margin">Last Name:</span><input type="text" id="lname" name="lname"></label>
-          <label for="email"><span id="margin">Email:</span><input type="email" id="email" name="email"></label>
-          <label for="msg"><span id="margin">Your Message:</span><textarea name="msg" id="msg" cols="80" rows="5"></textarea></label>
+          <label for="name"><span id="margin">Name:</span><input type="text" id="name" name="name" required></label>
+          <label for="lname"><span id="margin">Last Name:</span><input type="text" id="lname" name="lname" required></label>
+          <label for="email"><span id="margin">Email:</span><input type="email" id="email" name="email" required></label>
+          <label for="msg"><span id="margin">Your Message:</span><textarea name="msg" id="msg" cols="80" rows="5" required></textarea></label>
           <input type="submit" value="SUBMIT" id="submit">
         </fieldset>
       </form>
